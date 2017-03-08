@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/alxndrsn/eurodig.git"
+    "url": "git+ssh://git@github.com/medic/eurodig.git"
   },
   "author": "Alex Anderson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alxndrsn/eurodig/issues"
+    "url": "https://github.com/medic/eurodig/issues"
   },
-  "homepage": "https://github.com/alxndrsn/eurodig#readme",
+  "homepage": "https://github.com/medic/eurodig#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "grunt": "^1.0.1",
