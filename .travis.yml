@@ -1,6 +1,10 @@
 language: node_js
-
 deploy:
+  provider: npm
+  email: dev@medicmobile.org
+  api_key:
+    secure: go1dcO0YzKupba+yXPBr8Wl61aW9l/pHLuMQuu8+EPQqzfTDBSF6cim1YkS7nauCqWvQO9T1Adp+thkrE06MqdcZaausbM4/dFBsAIHmzLYO8SWCfzv2/sNidtZJIQykEOYuKxvyIg7s7QqVNtCIaM7dQ6/q4b2dvhxsMSJ8zsaY9R38e7bTJ9P9bPJI1VGr0v6C9ww7U29Q3op0jbjg08muSlg1SMBhA03o5rYsp8ljRRQUx1ZBmacna/O3LoJA8HR0rts+I0pmqGvLJI1kADnQ5xUPFuS9vewjajCT/dD4a9Tso3GlvLXLzZzOiSLJWzScQrfWDQGZqQmYaI31+l/8BYPrG7ZzCaQ1ofgwR5L/fh0/rXCmKMOyxZnRwTaGD157UgXNI8lXOuQ9UjHPyOcQddbuz3dnhmOHVl+pFi2BKFeXB4GtjWxDSjry7/CI/AjMCDLT5BxOnJD3LRT1kR4C3Kma/Xz9El/obsELueAVtl5u959Qu3urOs6g3Sq8K7vj8NWzNxQO+hzfxh9DlrDLvOj3mmSdUK6mC9W9Pyy58WbuDWHzBzJb5LL49iZ1Cv8ALQZt1NLwsXkv9sO4pxryf/7Xf69fjkKEjYC5kN2FZBBsAMaL22htJZqBUmXExzRS2Wf6gqsAtZOl2dsgKs46WZS2BaiXOogAnrxO3UE=
   on:
     tags: true
+    repo: medic/eurodig
     condition: "$TRAVIS_TAG =~ ^v\\d+\\.\\d+\\.\\d+$"
