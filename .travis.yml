@@ -7,4 +7,3 @@ deploy:
   on:
     tags: true
     repo: medic/eurodig
-    condition: "$TRAVIS_TAG =~ ^v\\d+\\.\\d+\\.\\d+$"
