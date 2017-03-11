@@ -14,3 +14,16 @@ Commonly used with:
 * Marathi
 * Nepali
 * Sanskrit
+
+# Installation
+
+```
+npm install eurodig
+```
+
+# Usage
+
+```
+var eurodig = require('eurodig');
+var one_hundred = eurodig('१००');
+```
