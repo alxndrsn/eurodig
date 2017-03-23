@@ -1,6 +1,6 @@
 {
   "name": "eurodig",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Convert Hindu-Arabic numerals of different scripts into Western Arabic (European) digits.",
   "main": "src/eurodig.js",
   "scripts": {
