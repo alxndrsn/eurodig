@@ -16,5 +16,8 @@ function replacer(c) {
 }
 
 module.exports = function(original) {
+	if (typeof original === 'number') {
+		original = '' + original;
+	}
 	return original.replace(/[0-9]/g, replacer);
 };

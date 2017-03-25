@@ -9,5 +9,8 @@ function replacer(c) {
 }
 
 module.exports = function(original) {
+	if (typeof original === 'number') {
+		return '' + original;
+	}
 	return original.replace(/[०-९]/g, replacer);
 };
