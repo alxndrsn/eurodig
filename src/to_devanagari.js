@@ -1,3 +1,5 @@
+'use strict';
+
 var T_TABLE = {
 	'0':'०',
 	'1':'१',
@@ -8,7 +10,7 @@ var T_TABLE = {
 	'6':'६',
 	'7':'७',
 	'8':'८',
-	'9':'९',
+	'9':'९'
 };
 
 function replacer(c) {
