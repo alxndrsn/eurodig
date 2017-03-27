@@ -17,13 +17,16 @@ Commonly used with:
 
 # Installation
 
-```
-npm install eurodig
-```
+	npm install eurodig
 
 # Usage
 
-```
-var eurodig = require('eurodig');
-var one_hundred = eurodig('१००');
-```
+## Converting to WA numerals
+
+	var eurodig = require('eurodig');
+	var one_hundred = eurodig('१००');
+
+## Converting _from_ WA numerals
+
+	var toDevanagari = require('eurodig/to_devanagari');
+	var one_hundred_in_devanagari = toDevanagari(100);
