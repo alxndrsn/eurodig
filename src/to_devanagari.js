@@ -16,5 +16,5 @@ function replacer(c) {
 }
 
 module.exports = function(original) {
-	return original.toString().replace(/[0-9]/g, replacer);
+	return original && original.toString().replace(/[0-9]/g, replacer);
 };
