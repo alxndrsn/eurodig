@@ -1,21 +1,21 @@
 {
-  "name": "eurodig",
+  "name": "eurodigit",
   "version": "1.2.2",
   "description": "Convert Hindu-Arabic numerals of different scripts into Western Arabic (European) digits.",
-  "main": "src/eurodig.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/medic/eurodig.git"
+    "url": "git+ssh://git@github.com/medic/eurodigit.js.git"
   },
   "author": "Alex Anderson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/medic/eurodig/issues"
+    "url": "https://github.com/medic/eurodigit.js/issues"
   },
-  "homepage": "https://github.com/medic/eurodig#readme",
+  "homepage": "https://github.com/medic/eurodigit.js#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "grunt": "^1.0.1",

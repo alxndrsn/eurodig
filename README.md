@@ -17,16 +17,16 @@ Commonly used with:
 
 # Installation
 
-	npm install eurodig
+	npm install eurodigit
 
 # Usage
 
 ## Converting to WA numerals
 
-	var eurodig = require('eurodig');
-	var one_hundred = eurodig('१००');
+	var eurodigit.js = require('eurodigit/to_euro');
+	var one_hundred = eurodigit.js('१००');
 
 ## Converting _from_ WA numerals
 
-	var toDevanagari = require('eurodig/to_devanagari');
+	var toDevanagari = require('eurodigit/to_devanagari');
 	var one_hundred_in_devanagari = toDevanagari(100);
