@@ -9,5 +9,5 @@ function replacer(c) {
 }
 
 module.exports = function(original) {
-	return original && original.replace(/[०-९]/g, replacer);
+	return original && original.toString().replace(/[०-९]/g, replacer);
 };

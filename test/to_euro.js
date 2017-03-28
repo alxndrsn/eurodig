@@ -19,4 +19,12 @@ describe('to_euro', function() {
 				  '० १ २ ३ ४ ५ ६ ७ ८ ९');
 	});
 
+	it('should handle random objects', function() {
+		// given
+		var obj = { toString: function() { return '123'; } };
+
+		// expect
+		assertTranslation('123', obj);
+	});
+
 });
