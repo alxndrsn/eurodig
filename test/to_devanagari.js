@@ -7,6 +7,7 @@ function assertTranslation(expected, toTranslate) {
 }
 
 describe('#to_devanagari()', function() {
+
 	it('should handle null values without error', function() {
 		// expect
 		assertTranslation(null, null);
@@ -18,8 +19,15 @@ describe('#to_devanagari()', function() {
 				  '0 1 2 3 4 5 6 7 8 9');
 	});
 
+	it('should ignore irrelevant text', function() {
+		// expect
+		assertTranslation('irrelevant १२३ text',
+				  'irrelevant 123 text');
+	});
+
 	it('should handle Numbers', function() {
 		// expect
 		assertTranslation('१२३', 123);
 	});
+
 });

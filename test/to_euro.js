@@ -19,6 +19,12 @@ describe('to_euro', function() {
 				  '० १ २ ३ ४ ५ ६ ७ ८ ९');
 	});
 
+	it('should ignore irrelevant text', function() {
+		// expect
+		assertTranslation('irrelevant 123 text',
+				  'irrelevant १२३ text');
+	});
+
 	it('should handle random objects', function() {
 		// given
 		var obj = { toString: function() { return '123'; } };
