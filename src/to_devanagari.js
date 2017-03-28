@@ -1,21 +1,7 @@
 'use strict';
 
-var T_TABLE = {
-	'0':'०',
-	'1':'१',
-	'2':'२',
-	'3':'३',
-	'4':'४',
-	'5':'५',
-	'6':'६',
-	'7':'७',
-	'8':'८',
-	'9':'९'
-};
-
-function replacer(c) {
-	return T_TABLE[c];
-}
+/* Magic number: 2406 is the char code for '०' */
+function replacer(c) { return String.fromCharCode(Number(c) + 2406); }
 
 module.exports = function(original) {
 	return original && original.toString().replace(/[0-9]/g, replacer);
