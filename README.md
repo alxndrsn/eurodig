@@ -23,10 +23,10 @@ Commonly used with:
 
 ## Converting to WA numerals
 
-	var eurodigit.js = require('eurodigit/to_euro');
+	var eurodigit.js = require('eurodigit/src/to_euro');
 	var one_hundred = eurodigit.js('१००');
 
 ## Converting _from_ WA numerals
 
-	var toDevanagari = require('eurodigit/to_devanagari');
+	var toDevanagari = require('eurodigit/src/to_devanagari');
 	var one_hundred_in_devanagari = toDevanagari(100);
