@@ -19,6 +19,18 @@ describe('to_euro', function() {
 				  '० १ २ ३ ४ ५ ६ ७ ८ ९');
 	});
 
+	it('should translate Eastern Arabic numerals', function() {
+		// expect
+		assertTranslation('0 1 2 3 4 5 6 7 8 9',
+				  '٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩');
+	});
+
+	it('should translate Perso-Arabic numerals', function() {
+		// expect
+		assertTranslation('0 1 2 3 4 5 6 7 8 9',
+				  '۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹');
+	});
+
 	it('should ignore irrelevant text', function() {
 		// expect
 		assertTranslation('irrelevant 123 text',
