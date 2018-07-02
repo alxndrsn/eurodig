@@ -1,5 +1,5 @@
-EuroDig
-=======
+EuroDigit
+=========
 
 Convert Hindu-Arabic numerals of different scripts into Western Arabic (European) digits. 
 
@@ -23,10 +23,10 @@ Commonly used with:
 
 ## Converting to WA numerals
 
-	var eurodigit.js = require('eurodigit/src/to_euro');
-	var one_hundred = eurodigit.js('१००');
+	const eurodigit = require('eurodigit/src/to_euro');
+	const one_hundred = eurodigit('१००');
 
 ## Converting _from_ WA numerals
 
-	var toDevanagari = require('eurodigit/src/to_devanagari');
-	var one_hundred_in_devanagari = toDevanagari(100);
+	const toDevanagari = require('eurodigit/src/to_devanagari');
+	const one_hundred_in_devanagari = toDevanagari(100);
